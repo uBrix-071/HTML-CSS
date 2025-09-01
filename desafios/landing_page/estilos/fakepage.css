@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Codec-regular';
+    src: url(../fontes/Codec-Cold-Regular-trial.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Codec-bold';
+    src: url(../fontes/Codec-Cold-Bold-trial.ttf) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Codec-extrabold';
+    src: url(../fontes/Codec-Cold-ExtraBold-trial.ttf) format('truetype');
+    font-weight: extrabold;
+}
+
+:root {
+    --cor_fundo: #101728;
+    --cor_destaque: #9340FF;;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: wheat;
+    color: black;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 380px;
+    margin: auto;
+    background-color: var(--cor_fundo);
+}
+
+header > h1 {
+    font-family: 'Codec-extrabold', sans-serif;
+    margin: 0;
+    font-size: 1.5em; 
+    align-self: center; 
+}
+
+header > img {
+    width: 3.75em;   
+    align-self: center;
+
+}
+
+main {
+    background-color: var(--cor_fundo);
+    max-width: 1000px;
+    min-width: 380px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;      
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--cor_fundo);
+}
+
+.hero-flex > h2 {
+    font-family: 'Codec-extrabold', sans-serif;
+    font-size: 5em;
+    align-self: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.hero-flex > img {
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+    border-radius: 10px;
+    gap: 20px;
+    widows: linear-gradient(to left, #FC3C61, #F63C6B, #C53EB4, #9340FF) 1px 20px 20px;
+}
+
+button {
+    background-image: linear-gradient(to left, #FC3C61, #F63C6B, #C53EB4, #9340FF);
+    color: white;
+    align-self: flex-start;
+    border-radius: 45px;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    font-family: 'Codec-bold', sans-serif;
+    display: flex;
+}
+
+
+

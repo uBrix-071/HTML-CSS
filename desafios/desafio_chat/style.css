@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    background-image: linear-gradient(to left, #4733b8c9, #267922);
+    margin: 30px;
+    padding: 30px;
+    border: 2px solid #000;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center
+}
+
+h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    text-align: center
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    text-align: right;
+    font-weight: 500;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 1px 1px 1px black;
+}
+
+.imagem-lupin {
+    width: 150px;
+}
+
+button {
+    background-color: #408F4B;
+    width: 200px;
+    height: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #60AA6B;
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-lupin {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
