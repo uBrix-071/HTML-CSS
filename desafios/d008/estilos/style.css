@@ -4,6 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Caveat', cursive;
+}
 
 * {
     margin: 0;
@@ -13,6 +18,8 @@
 html, body {
     background-color: darkgray;
     height: 100vh;
+    font-family: var(--fonte1);
+    font-size: 1em;
 }
 
 header {
@@ -24,6 +31,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 9vw;
 }
 
 header p {
@@ -45,6 +54,13 @@ section {
     padding-top: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-size: 3.8vw;
+    font-family: var(--fonte3);
+    font-weight: 700;
+}
+
+section p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -55,10 +71,33 @@ section.normal {
 section.paralaxe {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.501);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.paralaxe p {
-    background-color: rgba(0, 0, 0, 0.208);
-    width: 300px;
+    background-color: rgba(0, 0, 0, 0.56);
+    display: inline-block;
+    padding: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.499);
+}
+
+#flor {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+#folhas {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
     padding: 20px;
 }
