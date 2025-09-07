@@ -17,6 +17,7 @@
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
 
         td, th, caption {
@@ -34,6 +35,11 @@
 
         caption {
             background-color: lightblue;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
         }
 
         .num {
