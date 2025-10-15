@@ -5,33 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    legend {
+        padding: 0 10px;
+    }
+
+    textarea {
+        margin-top: 10px;
+    }
+</style>
 <body>
     <h1>Preencha o Formulário!</h1>
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome" minlength="10" maxlength="50" placeholder="Nome Completo" required>
-        </p>
-        <p>
-            <label for="iidade">Idade</label>
-            <input type="number" name="idade" id="iidade" min="0" max="100" required>
-        </p>
-        <p>
-            <input type="radio" name="gen" id="igen" value="Masculino" required> Masculino <br>
-            <input type="radio" name="gen" id="igen" value="Feminino" required> Feminino
-        </p>
-        <p>
-            <label for="icor">Cor Favorita: </label>
-            <input type="color" name="cor" id="icor" required>
-        </p>
-        <p>
-            <label for="imsg">Mensagem pessoal: </label> <br>
-            <textarea name="msg" id="imsg" minlength="10" maxlength="1000" required placeholder="Digite sua mensagem..." ></textarea>
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+    <form action="perfil.html" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" minlength="10" maxlength="50" placeholder="Nome Completo" autocomplete="additional-name" required>
+            </p>
+            <p>
+                <label for="iidade">Idade</label>
+                <input type="number" name="idade" id="iidade" min="0" max="100" autocomplete="cc-number" required>
+            </p>
+            <p>
+                <input type="radio" name="gen" id="igen" value="Masculino" required> Masculino <br>
+                <input type="radio" name="gen" id="igen" value="Feminino" autocomplete="sex"> Feminino
+            </p>
+            <p>
+                <label for="icor">Cor Favorita: </label>
+                <input type="color" name="cor" id="icor" required>
+            </p>
+            <p>
+                <label class="espaco" for="imsg">Mensagem pessoal: </label> <br>
+                <textarea name="msg" id="imsg" minlength="10" maxlength="1000" required placeholder="Digite sua mensagem..." rows="6" cols="40"> </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Ver resultado">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
