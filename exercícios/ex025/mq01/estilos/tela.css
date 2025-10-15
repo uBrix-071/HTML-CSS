@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Estilos para tela */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    Font-family: Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+article {
+    margin: 20px;
+    line-height: 1.6;
+    width: 80%;
+}
