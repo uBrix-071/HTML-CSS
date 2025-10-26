@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* Mobile First */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+header > h1 {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.material-symbols-outlined {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.material-symbols-outlined:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+menu {
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+}
+
+menu > ul > li  {
+    padding: 20px;
+}
+
+menu > ul > li:hover {
+    background-color: gray;
+    text-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+menu a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+}
+
+article > p {
+    text-indent: 20px;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+}
