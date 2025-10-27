@@ -41,6 +41,7 @@ menu {
 
 menu > ul > li  {
     padding: 20px;
+    border: 1px solid gray;
 }
 
 menu > ul > li:hover {
