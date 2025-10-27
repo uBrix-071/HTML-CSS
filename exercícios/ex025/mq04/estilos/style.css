@@ -19,7 +19,7 @@ header > h1 {
     padding: 20px;
 }
 
-.material-symbols-outlined {
+#hamburguer {
     display: block;
     background-color: black;
     color: white;
@@ -27,7 +27,7 @@ header > h1 {
     padding: 10px;
 }
 
-.material-symbols-outlined:hover {
+#hamburguer:hover {
     background-color: white;
     color: black;
     cursor: pointer;
@@ -36,6 +36,7 @@ header > h1 {
 menu {
     background-color: rgb(41, 41, 41);
     text-align: center;
+    display: none;
 }
 
 menu > ul > li  {
